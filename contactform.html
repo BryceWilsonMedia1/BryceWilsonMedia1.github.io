@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Bryce Wilson Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bryce Wilson Media</h1>
+        <p>Photography & Cinematography</p>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="info.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="testimonials.html" class="nav-link">Reviews</a>
+            <a href="contactform.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Book a Session</h2>
+            <p>Let's plan your upcoming creative project. Complete the booking brief below, and I will follow up within 24–48 hours to confirm availability and discuss detailed specs.</p>
+            
+            <form action="https://formspree.io/f/xwvdwrrg" method="POST">
+                <div class="row">
+                    <div class="col col-50" style="padding-left: 0;">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="col col-50" style="padding-right: 0;">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+
+                <label for="service">Desired Service Package</label>
+                <select id="service" name="service">
+                    <option value="portrait">Portraiture Session ($250)</option>
+                    <option value="event">Event / Editorial Coverage ($600)</option>
+                    <option value="commercial">Commercial Brand Identity ($1,200)</option>
+                    <option value="custom">Custom Dynamic Production Brief</option>
+                </select>
+
+                <label for="message">Project Description & Timeline Details</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your concepts, dates, locations, and overall vision..." required></textarea>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </div>
+    <footer>&copy; 2026 Bryce Wilson Media. All Rights Reserved.</footer>
+</body>
+</html>
